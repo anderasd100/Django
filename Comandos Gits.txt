@@ -1,0 +1,53 @@
+Para saber se o Git está funcionando no Windows?
+Git --help
+
+Como inicializar um repositório?
+Git init
+
+Git status
+
+Adicionando arquivos ao controle de versões
+git add "comandos.odt"
+
+
+Adicionando todos os arquivos:
+Git add .
+
+Git commit -m “Commit inicial”
+
+git config --global user.email "andersonabreurabelo.9@gmail.com"
+
+git config --global user.name "Anderson Abreu Rabelo"
+
+Git commit -m “Commit inicial”
+
+Como enviar alterações utilizando o Git Push:
+Git push
+
+Git remote add origin https://github.com/anderasd100/Django
+
+Git push
+
+git push --set-upstream origin master
+
+
+Ver os históricos das versões dos códigos:
+
+Git reflog
+
+Voltando o código anterior:
+
+$ git reset --hard a08faab
+
+O que são branches e como criar uma: 
+
+$ git branch
+* master
+
+$ git branch testes
+
+$ git checkout testes
+
+$ git branch
+  master
+* testes
