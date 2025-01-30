@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import include, path
+from .views import horario_atual
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('app/', include('app.urls')),
+    path('horario_atual', horario_atual)
 ]
