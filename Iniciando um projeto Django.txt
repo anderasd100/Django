@@ -1,0 +1,16 @@
+CD "caminho da pasta criada, exemplo: C:\Users\curai\OneDrive\Área de Trabalho\django-teste "
+
+A VENV se chama FUNDAMENTOS
+
+E O PROJETO CRIADO ANTERIORMENTE SE CHAMA ESTUDOS
+
+CD ESTUDOS
+
+AGORA VAMOS INICIAR NOSSO PROJETO
+
+python manage.py startapp app 
+
+Nome definido foi APP mas pode ser qualquer nome.
+
+
+Repare que foi criado uma pasta chamado APP que contém uma pasta chamado MIGRATIONS
