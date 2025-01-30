@@ -1,0 +1,35 @@
+from django.http import HttpResponse
+from django.shortcuts import render
+import datetime
+
+# Create your views here.
+def horario_atual(request): 
+    horario_atual = datetime.datetime.now()
+    return HttpResponse(horario_atual) 
+    
+    
+    Entendendo o parâmetro Request
+ 
+
+Quando uma requisição é enviada através do Django, a view recebe um objeto request. Este objeto é de grande importância, pois é ele quem possui todos os metadados da requisição.  
+
+Esses metadados são dos mais variados, como: 
+
+HttpRequest.scheme: Representa o tipo de requisição (http ou https); 
+HttpRequest.path: Retorna o caminho completo da rota que foi executada anteriormente; 
+HttpRequest.method: Retorna o método utilizado na requisição (GET, POST, PUT, PATCH, DELETE); 
+HttpRequest.cookies: Um dicionário que contém todos os cookies da requisição.
+
+Há diversos outros metadados que podem ser obtidos com o objeto request no Django. 
+Todos eles podem ser vistos por meio da sua documentação oficial no seguinte link: https://docs.djangoproject.com/en/4.1/ref/request-response/#httprequest-objects.
+
+Entendendo o parâmetro Response 
+
+Assim como toda view recebe um objeto do tipo request como parâmetro, ela é obrigada a retornar um objeto response.
+ Diferente do request que é criado automaticamente pelo Django, o response é de responsabilidade do programador. 
+
+Basicamente sua função é retornar alguma informação para o usuário, seja uma lista de usuários cadastrados ou uma mensagem de erro. 
+Qualquer informação que deva ser passada da view para o template utiliza o response. 
+
+Todos os recursos do objeto response podem ser vistos através da documentação do Django no 
+seguinte link: https://docs.djangoproject.com/en/4.1/ref/request-response/#httpresponse-objects. 
