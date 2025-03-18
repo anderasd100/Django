@@ -12,9 +12,16 @@ PYTHON.EXE -M PIP INSTALL --UPGRADE PIP
 
 DJANGO-ADMIN STARTPROJECT ESTUDOS
 
+python manage.py startapp contas
+
+python manage.py migrate
+
+
 CD ESTUDOS
 
 PYTHON MANAGE.PY RUNSERVER 
+
+python manage.py createsuperuser  
 
 
 127.0.0.1:8000
