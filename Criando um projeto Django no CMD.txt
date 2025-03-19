@@ -10,11 +10,11 @@ PIP INSTALL DJANGO
 
 PYTHON.EXE -M PIP INSTALL --UPGRADE PIP
 
-DJANGO-ADMIN STARTPROJECT ESTUDOS
+DJANGO-ADMIN STARTPROJECT ESTUDOS .
 
 python manage.py startapp contas
 
-python manage.py migrate
+python manage.py migrate #criação do banco de dados
 
 
 CD ESTUDOS
@@ -22,6 +22,10 @@ CD ESTUDOS
 PYTHON MANAGE.PY RUNSERVER 
 
 python manage.py createsuperuser  
+
+
+python manage.py makemigrations
+python manage.py migrate
 
 
 127.0.0.1:8000
